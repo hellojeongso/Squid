@@ -244,3 +244,23 @@ h1 {
   border: 1px solid #fff;
   cursor: pointer;
 }
+
+/* footer */
+footer {
+  display: flex;
+  background: #1f1f1f;
+  padding: 30px;
+}
+
+footer > div > h1 {
+  color: #fff;
+}
+footer > div:first-child {
+  flex: 3;
+  text-align: center;
+}
+
+footer > div:last-child {
+  flex: 9;
+  color: #fff;
+}
