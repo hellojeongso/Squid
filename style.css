@@ -264,3 +264,15 @@ footer > div:last-child {
   flex: 9;
   color: #fff;
 }
+
+.arrow-up {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 70px;
+  height: 70px;
+  border: none;
+  border-radius: 50%;
+  font-size: 58px;
+  cursor: pointer;
+}
