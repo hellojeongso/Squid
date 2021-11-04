@@ -388,3 +388,45 @@ footer > div:last-child {
     padding-top: 0px;
   }
 }
+
+@media screen and (max-width: 560px) {
+  .intro_text > h1,
+  .main_text0 > h1,
+  .main_text1 > h1,
+  .contact-1 > div > h1 {
+    font-size: 35px;
+  }
+
+  .contents1,
+  .contents3 {
+    font-size: 15px;
+  }
+
+  .icon_img-m {
+    width: 330px;
+  }
+
+  .main_text0 {
+    height: 730px;
+  }
+
+  .main_text2 {
+    padding-top: 0px;
+    margin-top: 360px;
+  }
+
+  .contents3 {
+    font-size: 15px;
+  }
+
+  footer > .last-footer {
+    padding-left: 30px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .search_area {
+    display: none;
+  }
+}
