@@ -1,3 +1,5 @@
+/* Common */
+
 * {
   list-style: none;
   text-decoration: none;
@@ -33,12 +35,11 @@ h1 {
   font-weight: bold;
 }
 
-/* Common END */
-
 .result {
   font-size: 24px;
 }
 
+/* Wrap */
 .intro_bg {
   background-image: url("image/intro.png");
   width: 100%;
@@ -94,6 +95,13 @@ h1 {
   color: #fff;
 }
 
+.nav_toggle-btn {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  display: none;
+}
+
 .intro_text {
   width: 100%;
   margin: 231px auto 231px auto;
@@ -105,6 +113,7 @@ h1 {
   color: #fff;
 }
 
+/* Amount */
 .amount {
   position: relative;
   top: -66px;
@@ -184,6 +193,38 @@ h1 {
   margin: 25px auto;
 }
 
+.icons-m {
+  text-align: center;
+  display: none;
+}
+
+.icons-m > li {
+  display: inline-block;
+}
+
+.icon_img-m {
+  width: 500px;
+  display: flex;
+  border: 1px solid black;
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.contents1-m {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 22px;
+}
+
+.contents2-m {
+  font-size: 15px;
+  font-weight: normal;
+  padding-top: 5px;
+}
+
+.icons-m > li {
+  margin-bottom: 5px;
+}
 /* main_text1 */
 .main_text1 {
   width: 100%;
@@ -217,22 +258,18 @@ h1 {
 /* main_text2 */
 .main_text2 {
   width: 100%;
-  height: 418px;
-  background-image: url("image/contact.png");
+  padding-top: 30px;
 }
 
-.main_text2 > ul {
-  display: flex;
-  padding-top: 138px;
-}
-
-.main_text2 > ul > li {
-  flex: 1;
+#contact-1 {
+  background-image: url(image/contact2.jpg);
+  height: 210px;
   text-align: center;
+  padding-top: 30px;
 }
 
-.main_text2 > ul > li > div > h1,
-.main_text2 > ul > li > div {
+.main_text2 > #contact-1 > div > h1,
+.main_text2 > #contact-1 > div {
   color: #fff;
 }
 
@@ -265,14 +302,89 @@ footer > div:last-child {
   color: #fff;
 }
 
-.arrow-up {
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  width: 70px;
-  height: 70px;
-  border: none;
-  border-radius: 50%;
-  font-size: 58px;
-  cursor: pointer;
+@media screen and (max-width: 768px) {
+  /* Wrap */
+
+  .header {
+    width: 100%;
+  }
+  .search_area {
+    margin-left: 20px;
+  }
+  .nav {
+    display: none;
+  }
+
+  .nav_toggle-btn {
+    display: block;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .fa-bars:before {
+    color: #ffffff;
+    justify-content: right;
+  }
+
+  .intro_text {
+    margin-top: 150px;
+    text-align: center;
+  }
+
+  .amount {
+    display: none;
+  }
+
+  /* Main_text0 */
+  .main_text0 {
+    height: 665px;
+  }
+  .main_text0 > h1 {
+    padding: 10px;
+  }
+
+  .contents1 {
+    margin-bottom: 12px;
+  }
+  .icons {
+    display: none;
+  }
+
+  .icons-m {
+    display: block;
+  }
+
+  .service {
+    flex-direction: column;
+  }
+
+  /* Main_text1 */
+  .main_text1 > h1 {
+    padding-top: 20px;
+  }
+
+  .service {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+  }
+
+  .food_photo > img {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+  }
+
+  .main_text2 {
+    width: 100%;
+    margin-top: 360px;
+  }
+
+  .main_text2 > ul {
+    padding-top: 0px;
+  }
 }

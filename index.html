@@ -13,6 +13,7 @@
   <script src="main.js" defer></script>
 </head>
 <body>
+  <!-- Wrap -->
   <div class="wrap">
     <div class="intro_bg">
       <div class="header" id="link_header">
@@ -28,6 +29,9 @@
           <li><a href="#link_main_text1">SERVICE</a></li>
           <li><a href="#link_main_text2">CONTACT</a></li>
         </ul>
+          <button class="nav_toggle-btn">
+            <i class="fas fa-bars"></i>
+          </button>
       </div>
       <div class="intro_text">
         <h1>총알오징어, 세마리에 만원</h1>
@@ -35,7 +39,7 @@
       </div>
     </div>
   </div> 
-  <!-- intro end -->
+  <!-- Amount -->
   <ul class="amount">
     <li>
       <div>
@@ -62,12 +66,10 @@
       </div>
     </li>        
   </ul>
-  <!-- amount end -->
-
+  <!-- Main_text0 -->
   <div class="main_text0" id="link_main_text0">
     <h1>ABOUT</h1>
     <div class="contents1">우리는 재규어처럼 재빠르게, 남들과는 다르게 오징어를 낚아챕니다.</div>
-
     <ul class="icons">
       <li>
         <div class="icon_img">
@@ -100,9 +102,37 @@
         </div>
       </li>
     </ul>
-  </div>
-  <!-- main_text0 end -->
+    <!--/// Mobile ///-->
+    <ul class="icons-m">
+      <li>
+        <div class="icon_img-m">
+          <img src="image/icon2.svg">
+          <div class="contents1-m">치밀한 계획
+            <div class="contents2-m">우리는 계획적으로 단속을 피해서 치밀하게 일을 처리합니다</div>
+          </div>
 
+        </div>
+      </li>
+      <li>
+        <div class="icon_img-m">
+          <img src="image/icon0.svg">
+          <div class="contents1-m">은신 기술자 확보
+            <div class="contents2-m">우리는 언제든지 환술에 걸린것처럼 순식간에 시야에서 사라질 수 있습니다</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="icon_img-m">
+          <img src="image/icon1.svg">
+          <div class="contents1-m">한번에 쓸어담기
+            <div class="contents2-m">다량의 오징어를 한번에 싹쓸이 하여 시중에 유통할 수 있는 기술력이 있습니다</div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    </div>
+    <!--////////////-->
+  <!-- main_text1 -->
   <div class="main_text1" id="link_main_text1">
     <h1>SERVICE</h1>
     <div class="contents1">엄격한 유통과정으로 까다로운 미식가들에게 납품하고 있습니다</div>
@@ -127,18 +157,17 @@
         <br>그런 오징어, 못생겼다고 놀리지 말고 이제 소중하게 대해주어야 하지 않을까요?
       </div>
     </div>
+  <!-- main_text2 -->  
     <div class="main_text2" id="link_main_text2">
-      <ul>
-        <li>
+        <div id="contact-1">
           <div><h1>CONTACT</h1></div>
           <div>우리에게 파트너십을 신청하거나, 고객이 되어주세요</div>
           <div class="more2">
             더 알아보기
           </div>
-        </li>
-        <li></li>
-      </ul>
-    </div>
+        </div>
+      </div>
+  <!-- Footer --> 
     <footer>
       <div>
         <h1>LOGO</h1>
@@ -151,8 +180,5 @@
       </div>
     </footer>
   </div>
-    <button class="arrow-up">
-      <i class="fas fa-sort-up"></i>
-    </button>
 </body>
 </html>
