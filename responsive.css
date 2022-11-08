@@ -1,0 +1,183 @@
+@media (max-width: 768px) {
+  .search_area{
+    display: none;
+  }
+
+  /* Common */
+  .inner {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+
+  /* Header */
+  nav {
+    width: 100%;
+  }
+
+  .gnb {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    margin-top: 0;
+    width: 250px;
+    height: 100vh;
+    flex-direction: column;
+    background-color: #fff;
+    z-index: 999;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 80px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.17);
+    transition: 0.3s;
+  }
+
+  .gnb li a {
+    display: block;
+    color: #000;
+    margin: 0;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .gnb.active {
+    right: 0;
+  }
+
+/* Trigger */
+.trigger {
+  display: block;
+  width: 30px;
+  height: 16px;
+  position: absolute;
+  right: 20px;
+  top: 33px;
+}
+
+.trigger span {
+  position: absolute;
+  height: 1px;
+  background-color: #aeaeae;
+  width: 100%;
+  transition: 0.3s;
+  z-index: 9999;
+}
+
+.trigger span:nth-child(1) {
+  top: 0;
+}
+.trigger span:nth-child(2) {
+  top: 50%;
+}
+.trigger span:nth-child(3) {
+  top: 100%;
+}
+
+.trigger.active span:nth-child(1) {
+  top: 50%;
+  transform: rotate(45deg);
+}
+.trigger.active span:nth-child(2) {
+  opacity: 0;
+}
+.trigger.active span:nth-child(3) {
+  top: 50%;
+  transform: rotate(-45deg);
+}
+
+
+
+  /* Intro */
+  .intro {
+    margin-top: 140px;
+  }
+  .intro-text h1 {
+    font-size: 40px;
+  }
+
+  /* Amount */
+  .amount-set {
+    flex-direction: column;
+    padding: 20px;
+    top: -80px;
+  }
+
+  .a-title{
+    font-size: 15px;
+  }
+
+  .amount-set li {
+    padding: 20px;
+  }
+
+  .amount-set li > div:nth-child(1) {
+    margin-top: 0px;
+  }
+
+  .amount-set > li:not(:last-child) > div {
+    border-right: 0;
+  }
+
+  .amount-set > li:not(:last-child) {
+    border-bottom: 1px solid gray;
+  }
+
+  /* About */
+  .about {
+    display: none;
+    border: 1px solid #000;
+  }
+
+  .icons {
+    flex-direction: column;
+    margin: 0;
+    border: 3px solid red;
+  }
+
+  .icons .contents2 {
+    width: 100%;
+  }
+
+  /* Service */
+  .service {
+    margin-top: -50px;
+    padding: 0;
+    padding-bottom: 50px;
+  }
+
+  .service-set {
+    flex-direction: column;
+  }
+
+  .s-content {
+    padding: 0;
+  }
+
+  .food-img img{
+    width: 100%;
+  }
+
+  .service h1 {
+    font-size: 40px;
+  }
+
+  .s-content h2 {
+    margin-bottom: 0;
+    margin: 30px 0;
+  }
+
+  /* Contact */
+  .contact h1 {
+    font-size: 40px;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+  }
+
+  footer > div:last-child {
+    margin-top: 20px;
+  }
+}
